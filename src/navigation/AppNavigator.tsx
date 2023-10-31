@@ -10,7 +10,8 @@ const Stack = createNativeStackNavigator<MainStackList>();
 function AppNavigator() {
     return (
         <Stack.Navigator screenOptions={{
-          headerShown: false,
+          headerShown: true,
+          headerBackVisible:true
         }}>
           <Stack.Screen name="Tabs" component={TabsNavigator} />
         </Stack.Navigator>

@@ -1,9 +1,8 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {WebView} from 'react-native-webview';
-import { useState } from 'react';
+import {useState} from 'react';
 import CustomSectionList from '../components/CustomSectionList';
-
 
 const TopGainersScreen = () => {
   const [data, setData] = useState([
@@ -347,18 +346,7 @@ const TopGainersScreen = () => {
     },
   ]);
 
-  return (
-        <CustomSectionList
-        dataReceived={data}
-        animateIndex={0}
-    />
-  );
+  return <CustomSectionList dataReceived={data} animateIndex={0} />;
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default TopGainersScreen;
