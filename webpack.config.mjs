@@ -244,16 +244,16 @@ export default (env) => {
           react: {
             ...Repack.Federated.SHARED_REACT,
             requiredVersion: '18.2.0',
-            eager: true,
+            eager: STANDALONE,
           },
           'react-native': {
             ...Repack.Federated.SHARED_REACT_NATIVE,
             requiredVersion: '0.72.6',
-            eager: true,
+            eager: STANDALONE,
           },
           '@react-navigation/native': {
             singleton: true,
-            eager: true,
+            eager: STANDALONE,
             requiredVersion: '6.0.13',
           },
           '@react-navigation/native-stack': {
@@ -268,14 +268,24 @@ export default (env) => {
           },
           '@react-native-async-storage/async-storage': {
             singleton: true,
-            eager: true,
+            eager: STANDALONE,
             requiredVersion: '1.17.11',
           },
           'react-native-webview': {
             singleton: true,
-            eager: true,
+            eager: STANDALONE,
             requiredVersion: '11',
           },
+          'react-native-camera': {
+            singleton: true,
+            eager: STANDALONE,
+            requiredVersion: '4.2.1',
+          },
+          'react-native-vector-icons': {
+            singleton: true,
+            eager: STANDALONE,
+            requiredVersion: '10.0.1',
+          }
         },
       }),
     ],
