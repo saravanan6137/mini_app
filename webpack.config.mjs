@@ -238,7 +238,7 @@ export default (env) => {
       new Repack.plugins.ModuleFederationPlugin({
         name: 'mae_mini',
         exposes: {
-          './App': './src/navigation/AppNavigator',
+          './App': '/src/App',
         },
         shared: {
           react: {
